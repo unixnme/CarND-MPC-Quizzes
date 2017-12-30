@@ -310,10 +310,10 @@ int main() {
   auto coeffs = polyfit(ptsx, ptsy, 1);
 
   // NOTE: free feel to play around with these
-  double x = -1;
-  double y = 10;
+  double x = -100;
+  double y = -1;
   double psi = 0;
-  double v = 10;
+  double v = 0;
   // The cross track error is calculated by evaluating at polynomial at x, f(x)
   // and subtracting y.
   double cte = polyeval(coeffs, x) - y;
